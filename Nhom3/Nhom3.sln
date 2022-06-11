@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTap", "BaiTap\BaiTap.csproj", "{2DDD8A1D-03D9-41BB-9668-6FC45709D028}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListDemo", "ArrayListDemo\ArrayListDemo.csproj", "{9BC0E5DA-264C-41FF-AD4A-2F6EE6AE0318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedListDemo", "SortedList\SortedListDemo.csproj", "{87E6FD63-8943-4E5F-AF2C-7394F9B83B19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2DDD8A1D-03D9-41BB-9668-6FC45709D028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DDD8A1D-03D9-41BB-9668-6FC45709D028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DDD8A1D-03D9-41BB-9668-6FC45709D028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC0E5DA-264C-41FF-AD4A-2F6EE6AE0318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC0E5DA-264C-41FF-AD4A-2F6EE6AE0318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC0E5DA-264C-41FF-AD4A-2F6EE6AE0318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC0E5DA-264C-41FF-AD4A-2F6EE6AE0318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E6FD63-8943-4E5F-AF2C-7394F9B83B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E6FD63-8943-4E5F-AF2C-7394F9B83B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E6FD63-8943-4E5F-AF2C-7394F9B83B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E6FD63-8943-4E5F-AF2C-7394F9B83B19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

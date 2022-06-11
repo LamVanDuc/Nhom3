@@ -31,15 +31,20 @@ namespace BaiTap
                     switch (choice)
                     {
                         case 1:
-                            program.AddDictionary();
+                            Console.WriteLine("Enter key : ");
+                            program.AddDictionary(Console.ReadLine());
                             break;
                         case 2:
-                            program.DeleteDictionary();
+                            Console.WriteLine("enter key to delete : ");
+                            program.DeleteDictionary(Console.ReadLine());
                             break;
                         case 3:
-                            program.SearchDictionary();
+                            Console.WriteLine("enter key to search : ");
+                            program.SearchDictionary(Console.ReadLine());
                             break;
-                        case 4: program.UpdateDictionary();
+                        case 4:
+                            Console.WriteLine("Enter key to update : ");
+                            program.UpdateDictionary(Console.ReadLine());
                             break;
                         case 5:
                             program.Output();
@@ -63,11 +68,9 @@ namespace BaiTap
 
 
               // add
-            public void AddDictionary()
+            public void AddDictionary(string key)
             {
-                    Console.WriteLine("Enter key : ");
-                    string key = Console.ReadLine();
-           
+
                 if (dictionary.ContainsKey(key))
                 {
                     Console.WriteLine("key already exists !");
@@ -83,30 +86,27 @@ namespace BaiTap
             }
 
         //Delete
-            public void DeleteDictionary()
-            {
-                    Console.WriteLine("enter key to delete : ");
-
-                    string key = Console.ReadLine();
-                    
-                    if (dictionary.ContainsKey(key) == true)
-                    {
-                    dictionary.Remove(key);
-                    Console.WriteLine("Delete success !");
-                    }
-            }
+        public void DeleteDictionary(string key)
+        {                   
+             if (dictionary.ContainsKey(key) == true)
+             {
+                dictionary.Remove(key);
+                Console.WriteLine("Delete success !");
+             }
+             else
+             {
+                Console.WriteLine("\"{0}\" does not exist !",key);
+             }
+        }
 
        
 
         //search
-        public void SearchDictionary()
+        public void SearchDictionary(string key)
         {
-            Console.WriteLine("enter key to search : ");
-            string key = Console.ReadLine();
-
             if (dictionary.ContainsKey(key)==true)
             {
-                Console.WriteLine(dictionary[key]);
+                Console.WriteLine("key: {0}  \nValue :  {1} ",key,dictionary[key]);
             }
             else
             {
@@ -116,11 +116,8 @@ namespace BaiTap
 
         }
 
-        public void UpdateDictionary()
-        {
-            Console.WriteLine("Enter key to update : ");
-            string key = Console.ReadLine();
-            
+        public void UpdateDictionary(string key)
+        {    
             if (dictionary.ContainsKey(key))
             {
                 Console.WriteLine("Enter  value to update : ");
@@ -139,7 +136,6 @@ namespace BaiTap
         public void Output()
         {
 
-            Console.WriteLine("key        value");
             foreach (DictionaryEntry item in dictionary)
             {
                 Console.WriteLine(item.Key + "        "+item.Value);
